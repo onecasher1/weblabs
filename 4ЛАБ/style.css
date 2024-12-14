@@ -1,0 +1,155 @@
+/* Подключение шрифта Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Общий стиль для всех элементов */
+* {
+    box-sizing: border-box; /* Учет границ и отступов в размере элемента */
+    margin: 0;
+    padding: 0;
+}
+
+/* Общий стиль для body */
+body {
+    font-family: 'Roboto', sans-serif; /* Основной шрифт */
+    font-size: 16px; /* Размер текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    background: linear-gradient(120deg, #f6f8fc, #e9ecf4); /* Градиентный фон */
+    color: #2d3436; /* Основной цвет текста */
+}
+
+/* Заголовки */
+h1, h2 {
+    text-align: center; /* Выравнивание текста */
+    font-weight: 700; /* Жирность текста */
+    margin: 20px 0;
+    font-family: 'Playfair Display', serif; /* Вторичный шрифт для заголовков */
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); /* Тень текста */
+    position: relative; /* Позиционирование для слоев */
+    z-index: 2;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: #34495e;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Абзацы */
+p {
+    font-size: 18px; /* Размер текста */
+    line-height: 1.8; /* Межстрочный интервал */
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin: 15px 20px;
+    color: #2d3436;
+}
+
+/* Ссылки */
+a {
+    color: #3498db; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    color: #e74c3c; /* Цвет текста при наведении */
+    transform: scale(1.1); /* Увеличиваем размер при наведении */
+}
+
+/* Изображения */
+img {
+    max-width: 80%; /* Размер изображения */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px; /* Скругляем углы */
+    border: 3px solid #bdc3c7; /* Граница изображения */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+/* Списки */
+ul {
+    list-style: none; /* Убираем стандартные маркеры */
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Кнопки */
+.button {
+    background-color: #e74c3c; /* Фон кнопки */
+    color: #ffffff; /* Цвет текста */
+    padding: 12px 24px;
+    border: none; /* Убираем границу */
+    border-radius: 25px; /* Скругление углов */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Для возможности наложения */
+    z-index: 1;
+}
+
+.button:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Блок с обтеканием */
+.float-box {
+    width: 40%;
+    min-height: 200px;
+    background-color: #ecf0f1; /* Фон блока */
+    margin: 20px;
+    float: left; /* Обтекание слева */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Обрезаем содержимое при переполнении */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    li {
+        margin: 0 10px;
+    }
+
+    .float-box {
+        width: 100%; /* Блок занимает всю ширину на маленьких экранах */
+        float: none; /* Убираем обтекание */
+        margin: 10px auto;
+    }
+}
