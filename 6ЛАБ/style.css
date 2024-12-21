@@ -1,0 +1,153 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Стили для основного контента */
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Одно колонное расположение по умолчанию */
+    gap: 20px;
+    padding: 20px;
+}
+
+.intro,
+.blog,
+.reviews,
+.contact-form,
+.contacts {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для блока с отзывами */
+.review {
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 5px solid #3498db;
+    margin-bottom: 15px;
+}
+
+/* Стили для формы обратной связи */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Стили для социальных ссылок */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links li {
+    list-style: none;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: #333;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+/* Адаптивность */
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* Две колонки для экранов шире 768px */
+    }
+
+    .intro,
+    .blog,
+    .reviews,
+    .contact-form,
+    .contacts {
+        margin-bottom: 20px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr; /* Три колонки для экранов шире 1024px */
+    }
+}
+
+
