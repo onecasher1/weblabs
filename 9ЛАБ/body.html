@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Onecasher</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="demo.html">Анимации и Переходы</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="intro">
+            <h2>О нашей компании</h2>
+            <p>Мы специализируемся на разработке современных решений для бизнеса. Наши услуги включают создание веб-сайтов, мобильных приложений и оптимизацию процессов. В работе мы ценим качество, скорость и индивидуальный подход к каждому клиенту.</p>
+            <p>Наша миссия — делать технологии доступными и полезными для всех.</p>
+        </section>
+
+        <section class="blog">
+            <h2>Последние публикации</h2>
+            <article>
+                <h3>Секреты успешного бизнеса</h3>
+                <p>Мы делимся опытом, который помогает нашим клиентам достигать успеха.</p>
+            </article>
+            <article>
+                <h3>Советы по SEO-оптимизации</h3>
+                <p>Узнайте, как продвигать ваш сайт в поисковых системах.</p>
+            </article>
+            <article class="loading-card">
+                <input type="checkbox" id="toggle" class="toggle" hidden>
+                <label for="toggle" class="loader"></label>
+                <div class="content">
+                    <h3>Новая статья</h3>
+                    <p>Эта статья появится после завершения загрузки.</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h2>3D куб Анимации</h2>
+            <div class="container-3d">
+                <div class="animated-box cube"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>3D-эффект наведения и поворота</h2>
+            <div class="animated-box 3d rotate3d"></div>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Связаться с нами</h2>
+            <form action="#" method="post">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Onecasher. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+
+
+

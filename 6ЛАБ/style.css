@@ -140,7 +140,7 @@ button:hover {
     }
 
     .social-links {
-        justify-content: center;
+        justify-content: space-around;
     }
 }
 

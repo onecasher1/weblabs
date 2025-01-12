@@ -1,0 +1,73 @@
+<!-- Обновленный файл form.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация нового пользователя</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="body.html">Главная</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/submit-registration" method="post">
+            <h2>Регистрация нового пользователя</h2>
+            <fieldset>
+                <legend>Личная информация</legend>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Пол:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                    <option value="other">Другой</option>
+                </select>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Придумайте пароль" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+                <label for="contact-time">Удобный интервал для связи:</label>
+                <select id="contact-time" name="contact_time" required>
+                    <option value="morning">Утро</option>
+                    <option value="day">День</option>
+                    <option value="evening">Вечер</option>
+                    <option value="night">Ночь</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Предпочитаемый способ связи</legend>
+                <label><input type="checkbox" name="contact-method" value="email"> Email</label>
+                <label><input type="checkbox" name="contact-method" value="phone"> Телефон</label>
+                <label><input type="checkbox" name="contact-method" value="sms"> SMS</label>
+            </fieldset>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Контакты: example@mail.com</p>
+    </footer>
+</body>
+</html>
+
+

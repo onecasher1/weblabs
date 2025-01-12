@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демо-примеры</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Демо-примеры</h1>
+        <nav>
+            <ul>
+                <li><a href="body.html">Главная</a></li>
+                <li><a href="#gradients">Градиенты</a></li>
+                <li><a href="#2d-transform">2D-преобразования</a></li>
+                <li><a href="#animations">Анимации</a></li>
+                <li><a href="#transitions">Переходы</a></li>
+                <li><a href="#3d-animation">3D-анимации</a></li>
+                <li><a href="#hover-rotate">3D-вращение при наведении</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gradients">
+            <h2>Примеры градиентов</h2>
+            <div class="example-container">
+                <div class="example-box" style="background: linear-gradient(to right, red, yellow);"></div>
+                <div class="example-box" style="background: radial-gradient(circle, red, yellow);"></div>
+                <div class="example-box" style="background: conic-gradient(red, yellow, blue);"></div>
+            </div>
+        </section>
+
+        <section id="2d-transform">
+            <h2>Примеры 2D-преобразований</h2>
+            <div class="example-container">
+                <div class="example-box" style="background: red; transform: rotate(30deg);"></div>
+                <div class="example-box" style="background: blue; transform: scale(1.5);"></div>
+                <div class="example-box" style="background: green; transform: translate(50px, 20px);"></div>
+                <div class="example-box" style="background: purple; transform: skew(20deg, 10deg);"></div>
+            </div>
+        </section>
+
+        <section id="animations">
+            <h2>Примеры анимаций</h2>
+            <div class="example-container">
+                <div class="animated-box bounce"></div>
+                <div class="animated-box fade"></div>
+                <div class="animated-box color"></div>
+                <div class="animated-box move"></div>
+            </div>
+        </section>
+
+        <section id="transitions">
+            <h2>Примеры переходов</h2>
+            <div class="example-container">
+                <div class="example-box transition-box"></div>
+                <div class="example-box transition-box rotate" style="background: cyan;"></div>
+            </div>
+        </section>
+
+        <section id="3d-animation">
+            <h2>3D Cube Animation</h2>
+            <div class="container-3d">
+                <div class="animated-box cube"></div>
+            </div>
+        </section>
+
+        <section id="hover-rotate">
+            <h2>Hover Rotate 3D Effect</h2>
+            <div class="animated-box 3d rotate3d"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">&copy; 2024 Onecasher. Все права защищены.</p>
+    </footer>
+</body>
+</html>

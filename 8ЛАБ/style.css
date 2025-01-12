@@ -1,0 +1,87 @@
+/* Псевдоэлемент для добавления точки перед элементами списка */
+li::before {
+    content: "•";
+    color: #3498db;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Легкое подчеркивание для ссылок при наведении */
+a {
+    text-decoration: none;
+    color: #2d3a36;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+a:hover {
+    color: #3498db; /* Цвет текста при наведении */
+}
+
+/* Стрелка перед заголовками */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #2d3a36;
+}
+
+h2::before {
+    content: "→";
+    color: #3498db;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+/* Легкий эффект для кнопки с псевдоэлементом ::before */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+button::before {
+    content: "▶";
+    margin-right: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    opacity: 0; /* Скрыто по умолчанию */
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #1c5980;
+    transform: scale(0.95);
+}
+
+button:hover::before {
+    opacity: 1; /* Показываем иконку при наведении */
+}

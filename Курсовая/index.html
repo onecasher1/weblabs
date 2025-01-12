@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погодное приложение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Погодное приложение</h1>
+        <form action="#" method="post" class="input-group">
+            <input type="text" name="city" id="city-input" placeholder="Введите название города">
+            <button type="submit" id="search-button">Поиск</button>
+            <button type="reset" id="clear-button">Очистить</button>
+        </form>
+        <div class="button-group">
+            <button disabled>Предупреждения</button>
+            <button disabled>Статистика</button>
+            <button disabled>Прогноз</button>
+        </div>
+        <div class="result">
+            <img id="weather-icon" src="placeholder.png" alt="Иконка погоды">
+            <div id="result-label">
+                <p><b>Погода:</b> Облачно</p>
+                <p><b>Температура:</b> 15°C</p>
+                <p><b>Влажность:</b> 78%</p>
+                <p><b>Давление:</b> 1012 гПа</p>
+                <p><b>Скорость ветра:</b> 5 м/с</p>
+            </div>
+        </div>
+        <div id="graph-widget" class="graph-container">
+            <p>График температуры будет отображаться здесь</p>
+        </div>
+    </div>
+</body>
+</html>

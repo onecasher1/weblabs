@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация нового пользователя</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Центрирование формы на странице */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        form input, form select, form button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="body.html">Главная</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="/submit-registration" method="post">
+            <h2>Регистрация нового пользователя</h2>
+            <fieldset>
+                <legend>Личная информация</legend>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="gender">Пол:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                    <option value="other">Другой</option>
+                </select>
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Придумайте пароль" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона" required>
+
+                <label for="contact-time">Удобный интервал для связи:</label>
+                <select id="contact-time" name="contact_time" required>
+                    <option value="morning">Утро</option>
+                    <option value="day">День</option>
+                    <option value="evening">Вечер</option>
+                    <option value="night">Ночь</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+    <fieldset>
+        <legend>Предпочитаемый способ связи</legend>
+        <label for="contact-email">
+            <input type="checkbox" id="contact-email" name="contact-method" value="email"> Email
+        </label>
+        <label for="contact-phone">
+            <input type="checkbox" id="contact-phone" name="contact-method" value="phone"> Телефон
+        </label>
+        <label for="contact-sms">
+            <input type="checkbox" id="contact-sms" name="contact-method" value="sms"> SMS
+        </label>
+    </fieldset>
+
+    <footer>
+        <p>Контакты: example@mail.com</p>
+    </foote
+
