@@ -1,0 +1,148 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Контейнер для основного контента */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Заголовок страницы */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Секция с кнопками */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Секция ввода */
+.input-section {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#city-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#find-weather {
+    margin-left: 10px;
+}
+
+/* Секция с результатами */
+.result-section {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.result p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Секция с графиком */
+.graph-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.graph-section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Мобильная адаптивность */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .result-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .result p {
+        font-size: 16px;
+    }
+
+    .input-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #city-input {
+        width: 100%;
+    }
+
+    #find-weather {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

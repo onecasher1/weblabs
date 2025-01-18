@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Погодное приложение</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="buttons">
+        <a href="warnings.html"><button>Предупреждения</button></a>
+        <a href="statistics.html"><button>Статистика</button></a>
+        <a href="forecast.html"><button>Прогноз</button></a>
+    </div>
+    
     <div class="container">
         <h1>Погодное приложение</h1>
-        <form action="#" method="post" class="input-group">
-            <input type="text" name="city" id="city-input" placeholder="Введите название города">
-            <button type="submit" id="search-button">Поиск</button>
-            <button type="reset" id="clear-button">Очистить</button>
-        </form>
-        <div class="button-group">
-            <button disabled>Предупреждения</button>
-            <button disabled>Статистика</button>
-            <button disabled>Прогноз</button>
+        <div class="input-section">
+            <label for="city-input">Введите город:</label>
+            <input type="text" id="city-input" placeholder="Например, Москва">
+            <button id="find-weather">Найти погоду</button>
         </div>
-        <div class="result">
-            <img id="weather-icon" src="placeholder.png" alt="Иконка погоды">
-            <div id="result-label">
-                <p><b>Погода:</b> Облачно</p>
-                <p><b>Температура:</b> 15°C</p>
-                <p><b>Влажность:</b> 78%</p>
-                <p><b>Давление:</b> 1012 гПа</p>
-                <p><b>Скорость ветра:</b> 5 м/с</p>
+        <div class="result-section">
+            <div class="weather-icon">
+            </div>
+            <div class="result">
+                <p><b>Погода:</b> Ясно</p>
+                <p><b>Температура:</b> 25°C</p>
+                <p><b>Влажность:</b> 60%</p>
+                <p><b>Давление:</b> 1013 гПа</p>
+                <p><b>Скорость ветра:</b> 3 м/с</p>
+                <p><b>Восход:</b> 07:00</p>
+                <p><b>Закат:</b> 19:00</p>
             </div>
         </div>
-        <div id="graph-widget" class="graph-container">
-            <p>График температуры будет отображаться здесь</p>
+        <div class="graph-section">
+            <h2>График температуры к сожалению отсутствует</h2>
+            <alt="График температуры отсутствует">
         </div>
     </div>
 </body>
 </html>
+
